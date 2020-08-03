@@ -20,6 +20,9 @@ import { MasmasPipe } from './shared/pipes/masmas.pipe';
 import { SexdescPipe } from './shared/pipes/sexdesc.pipe';
 import { MateriaFormComponent } from './components/materia-form/materia-form.component';
 import { MatriculaFormComponent } from './components/matricula-form/matricula-form.component';
+import { MaquinariaFormComponent } from './components/maquinaria-form/maquinaria-form.component';
+import { MaquinariaCardComponent } from './components/maquinaria-card/maquinaria-card.component';
+import { MaquinariaListComponent } from './components/maquinaria-list/maquinaria-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { MatriculaFormComponent } from './components/matricula-form/matricula-fo
     MasmasPipe,
     SexdescPipe,
     MateriaFormComponent,
-    MatriculaFormComponent    
+    MatriculaFormComponent,
+    MaquinariaFormComponent,
+    MaquinariaCardComponent,
+    MaquinariaListComponent    
   ],
   imports: [
     BrowserModule,
