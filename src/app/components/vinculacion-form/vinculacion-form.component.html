@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="text-center">
+        <fa-icon class="fa-2x" [icon]="faListAlt"></fa-icon>    
+    </div>
+    <hr>
+    <h6>{{title}}</h6>
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="user">
+    <div class="card-body">
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faListAlt'></fa-icon></span>
+            </div>
+            <input formControlName="nombre_proyecto" [(ngModel)]="vinculacion.nombre_proyecto" type="text" class="form-control form-control-user" 
+            placeholder="Nombre del Proyecto"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faUser'></fa-icon></span>
+            </div>
+            <input formControlName="nombre_responsable" [(ngModel)]="vinculacion.nombre_responsable" type="text" class="form-control form-control-user" 
+            placeholder="Tutor del Proyecto"/><br>
+        </div>
+        <label>Fecha de Inicio</label>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faCalendarDay'></fa-icon></span>
+            </div>
+            <input formControlName="fecha_inicio" [(ngModel)]="vinculacion.fecha_inicio" type="date" class="form-control form-control-user" 
+            placeholder="Fecha de Inicio"/><br>
+        </div>
+        <label>Fecha de Finalización</label>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faCalendarDay'></fa-icon></span>
+            </div>
+            <input formControlName="fecha_fin" [(ngModel)]="vinculacion.fecha_fin" type="date" class="form-control form-control-user" 
+            placeholder="Fecha de Finalización"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faListOl'></fa-icon></span>
+            </div>
+            <input formControlName="numero_integrantes" [(ngModel)]="vinculacion.numero_integrantes" type="number" class="form-control form-control-user" 
+            placeholder="Integrantes Proyecto"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faClock'></fa-icon></span>
+            </div>
+            <input formControlName="numero_horas" [(ngModel)]="vinculacion.numero_horas" type="number" class="form-control form-control-user" 
+            placeholder="N° Horas Vinculación"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faBuilding'></fa-icon></span>
+            </div>
+            <input formControlName="nombre_organizacion" [(ngModel)]="vinculacion.nombre_organizacion" type="text" class="form-control form-control-user" 
+            placeholder="Organizador"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faMapMarked'></fa-icon></span>
+            </div>
+            <input formControlName="ubicacion" [(ngModel)]="vinculacion.ubicacion" type="text" class="form-control form-control-user" 
+            placeholder="Ubicación"/><br>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-success">Guardar</button><br>
+            <button type="reset" (click)="onReset()" class="btn btn-danger">Cancelar</button><br>
+        </div>
+
+    </div>
+</form>

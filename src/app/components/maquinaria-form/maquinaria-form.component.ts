@@ -3,6 +3,7 @@ import { Maquinaria } from 'src/app/models/maquinaria';
 import { FormGroup , FormBuilder, Validators } from '@angular/forms';
 import { MaquinariaService } from 'src/app/services/maquinaria.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { faCalendarDay, faBarcode,faMoneyCheckAlt,faPercent,faUserAltSlash, faCannabis} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -13,6 +14,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class MaquinariaFormComponent implements OnInit {
 
   title = "Nuevo registro de maquinaria";
+  faCalendarDay=faCalendarDay;
+  faBarcode=faBarcode;
+  faMoneyCheckAlt=faMoneyCheckAlt;
+  faPercent=faPercent;
+  faUserAltSlash=faUserAltSlash;
+  faCannabis=faCannabis;
+
   maquinaria : Maquinaria = new Maquinaria();
   
   form: FormGroup;

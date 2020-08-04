@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Maquinaria } from 'src/app/models/maquinaria';
-import { faListAlt } from '@fortawesome/free-solid-svg-icons';
+import { faListAlt,faCalendarDay, faBarcode,faMoneyCheckAlt,faPercent} from '@fortawesome/free-solid-svg-icons';
 import { MaquinariaService } from 'src/app/services/maquinaria.service';
 import { ActivatedRoute } from '@angular/router';
 @Component({
@@ -11,6 +11,10 @@ import { ActivatedRoute } from '@angular/router';
 export class MaquinariaCardComponent implements OnInit {
 
   faListAlt = faListAlt;
+  faBarcode=faBarcode;
+  faCalendarDay=faCalendarDay;
+  faMoneyCheckAlt=faMoneyCheckAlt;
+  faPercent=faPercent;
   
   maquinaria : Maquinaria;
 

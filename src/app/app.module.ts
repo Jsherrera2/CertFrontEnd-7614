@@ -23,6 +23,9 @@ import { MatriculaFormComponent } from './components/matricula-form/matricula-fo
 import { MaquinariaFormComponent } from './components/maquinaria-form/maquinaria-form.component';
 import { MaquinariaCardComponent } from './components/maquinaria-card/maquinaria-card.component';
 import { MaquinariaListComponent } from './components/maquinaria-list/maquinaria-list.component';
+import { VinculacionFormComponent } from './components/vinculacion-form/vinculacion-form.component';
+import { VinculacionCardComponent } from './components/vinculacion-card/vinculacion-card.component';
+import { VinculacionListComponent } from './components/vinculacion-list/vinculacion-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { MaquinariaListComponent } from './components/maquinaria-list/maquinaria
     MatriculaFormComponent,
     MaquinariaFormComponent,
     MaquinariaCardComponent,
-    MaquinariaListComponent    
+    MaquinariaListComponent,
+    VinculacionFormComponent,
+    VinculacionCardComponent,
+    VinculacionListComponent    
   ],
   imports: [
     BrowserModule,

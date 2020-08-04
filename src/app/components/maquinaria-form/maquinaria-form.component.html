@@ -1,18 +1,57 @@
-<h3>{{title}}</h3>
-<br><br><br><br>
+<div class="container">
+    <div class="text-center">
+        <fa-icon class="fa-2x" [icon]="faCannabis"></fa-icon>    
+    </div>
+    <hr>
+    <h6>{{title}}</h6>
+</div>
 <form [formGroup]="form" (ngSubmit)="onSubmit()" class="user">
-<fieldset>
-    <label>Nombre:</label>
-    <input formControlName="nombre" [(ngModel)]="maquinaria.nombre" type="text"  /><br>
-    <label>Código:</label>
-    <input formControlName="codigo" [(ngModel)]="maquinaria.codigo" type="text" /><br>
-    <label>Fecha de adquisición:</label>
-    <input formControlName="fecha_adquisicion" [(ngModel)]="maquinaria.fecha_adquisicion"  type="date" /><br>
-    <label>Precio:</label>
-    <input formControlName="precio" [(ngModel)]="maquinaria.precio"  type="number" /><br>
-    <label>Porcentaje de depreciación anual:</label>
-    <input formControlName="porcentaje_depreciacion" [(ngModel)]="maquinaria.porcentaje_depreciacion" type="number" /><br>    
-    <button type="submit">Guardar</button><br>
-    <button type="reset" (click)="onReset()">Cancelar</button><br>
-</fieldset>
+    <div class="card-body">
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faCannabis'></fa-icon></span>
+            </div>
+            <input formControlName="nombre" [(ngModel)]="maquinaria.nombre" type="text" class="form-control form-control-user" 
+            placeholder="Nombre"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faBarcode'></fa-icon></span>
+            </div>
+            <input formControlName="codigo" [(ngModel)]="maquinaria.codigo" type="text" class="form-control form-control-user" 
+            placeholder="Código"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faCalendarDay'></fa-icon></span>
+            </div>
+            <input formControlName="fecha_adquisicion" [(ngModel)]="maquinaria.fecha_adquisicion" type="date" class="form-control form-control-user" 
+            placeholder="Fecha de Adquisición"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faMoneyCheckAlt'></fa-icon></span>
+            </div>
+            <input formControlName="precio" [(ngModel)]="maquinaria.precio" type="number" class="form-control form-control-user" 
+            placeholder="Precio"/><br>
+        </div>
+        <div  class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><fa-icon [icon]='faPercent'></fa-icon></span>
+            </div>
+            <input formControlName="porcentaje_depreciacion" [(ngModel)]="maquinaria.porcentaje_depreciacion" type="number" class="form-control form-control-user" 
+            placeholder="Porcentaje de depreciación anual"/><br>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn btn-success">Guardar</button><br>
+            <button type="reset" (click)="onReset()" class="btn btn-danger">Cancelar</button><br>
+        </div>
+        
+    </div>
 </form>
+
+
+
+
+

@@ -1,0 +1,71 @@
+<br><br>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">Proyecto</div>
+    <div class="card-body">
+      <h5 class="card-title"><h2>{{vinculacion.nombre_proyecto | uppercase }}</h2></h5>
+      <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Responsable</small>
+            <p class="h6"><strong>{{vinculacion.nombre_responsable}}</strong></p>
+        </div>
+    </div> 
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faCalendarDay'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Fecha de Inicio</small>
+            <p class="h6"><strong>{{vinculacion.fecha_inicio | date:'longDate' }}</strong></p>
+        </div>
+    </div> 
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faCalendarDay'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Fecha de Finalización</small>
+            <p class="h6"><strong>{{vinculacion.fecha_fin | date:'longDate' }}</strong></p>
+        </div>
+    </div> 
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faListOl'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Número Integrantes</small>
+            <p class="h6"><strong>{{vinculacion.numero_integrantes}}</strong></p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faClock'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Número Horas</small>
+            <p class="h6"><strong>{{vinculacion.numero_horas}}</strong></p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faBuilding'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Organizador</small>
+            <p class="h6"><strong>{{vinculacion.nombre_organizacion}}</strong></p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <fa-icon class="mr-3 fa-2x" [icon]='faMapMarked'></fa-icon>
+        </div>
+        <div class="media-body">
+            <small class="media-heading">Ubicación</small>
+            <p class="h6"><strong>{{vinculacion.ubicacion}}</strong></p>
+        </div>
+    </div>
+    </div>
+    <button [routerLink]="['/vinculacion/list']" class="btn btn-info" ><fa-icon [icon]="faListAlt"></fa-icon>&nbsp;Volver</button> 
+  </div>
